@@ -162,8 +162,8 @@ fn generate_one(
             }
         },
     );
-
-    if save_image {
+    
+    if false {
         let index_ref = index.as_index_ref();
         let sampler = world.sim();
         let map_size_lg = sampler.map_size_lg();
@@ -232,7 +232,7 @@ fn generate_one(
 
         let _ = image_file.flush();
     }
-
+    
     if save_metadata {
         // Write config
         if let Err(error) = fs::write(
